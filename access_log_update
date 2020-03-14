@@ -3,5 +3,4 @@ cat /var/log/apache2/access.log | uniq | grep -v "192.168.0.1" | grep -v "POST"|
 
 cat /var/log/apache2/access.log | grep -v "192.168.0.1" | grep -v "POST" | cut -d ' ' -f 1 | uniq --check-chars=8 > /var/scripts/ip.list
 
-#cat /var/log/apache2/access.log.1 | grep -v "192.168.0.1" | grep -v "POST" | cut -d ' ' -f 1 | uniq --check-chars=8 > /root/scripts/ip.list.old
 
