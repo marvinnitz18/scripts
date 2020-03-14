@@ -1,8 +1,8 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3
 import requests
 import json
-ip_list = open("/root/scripts/ip.list", "r")
-located = open("/root/scripts/coordinate.list","w")
+ip_list = open("/var/scripts/ip.list", "r")
+located = open("/var/scripts/coordinate.list","w")
 line = ip_list.readline()
 while line:
     ip = line.replace('\n','')

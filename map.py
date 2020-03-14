@@ -3,7 +3,7 @@ import json
 import folium
 m = folium.Map(location=[38, 6], tiles='Stamen Toner', zoom_start=2)
 
-coordinates = open("/root/scripts/coordinate.list", "r")
+coordinates = open("/var/scripts/coordinate.list", "r")
 line = coordinates.readline()
 user_count= 1
 while line:
