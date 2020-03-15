@@ -3,6 +3,8 @@ import requests
 import json
 import sys
 import os
+import datetime
+import time
 
 args = sys.argv[1:]
 modt = str(args[0])
@@ -55,7 +57,7 @@ mM"    MM    "Mm   YMM   ""`  MMM   YMM   ""` MMMM   "W" MMM
 </body>
 </html>"""
 
-page = page.format(modt)
+page = page.format(modt+" on "+time.strftime("%d %b %Y"))
 
 dynindex.write(page)
 
