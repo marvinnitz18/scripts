@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3
 import json
 import folium
 m = folium.Map(location=[38, 6], tiles='Stamen Toner', zoom_start=2)
