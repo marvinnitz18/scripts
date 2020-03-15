@@ -1,7 +1,7 @@
 #!/bin/bash
-sh access_log_update
-python3 coordinates
-python3 locator
-python map.py
-python3 dynindex "Welcome to flexonmyex.de"
-python3 dynaccesslog
+sh /var/scripts/access_log_update
+python3 /var/scripts/coordinates
+python3 /var/scripts/locator
+python /var/scripts/map.py
+python3 /var/scripts/dynindex "Welcome to flexonmyex.de"
+python3 /var/scripts/dynaccesslog
