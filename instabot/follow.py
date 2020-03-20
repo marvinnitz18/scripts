@@ -1,3 +1,4 @@
+import auth
 import sys
 import time
 from selenium import webdriver as wd
@@ -11,8 +12,8 @@ driver = wd.Firefox(options=options,executable_path='/usr/bin/geckodriver')
 
 lines = open('users','r', encoding='utf8').readlines()
 user_count = 1
-username = ''
-password = ''
+username = auth.username
+password = auth.password
 instaurl = 'https://www.instagram.de'
 
 driver.get(instaurl)
