@@ -11,8 +11,8 @@ driver = wd.Firefox(options=options,executable_path='/usr/bin/geckodriver')
 
 lines = open('users','r', encoding='utf8').readlines()
 user_count = 1
-username = 'oetisheim.memes'
-password = 'Is75kate26me'
+username = ''
+password = ''
 instaurl = 'https://www.instagram.de'
 
 driver.get(instaurl)
@@ -48,6 +48,3 @@ for x in range(5,len(lines)):
         print("Didnt find profile")
 
     user_count = user_count +1
-
-
-
