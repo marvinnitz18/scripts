@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import json
 import folium
+import os
+
 m = folium.Map(location=[38, 6], tiles='Stamen Toner', zoom_start=2)
 
 coordinates = open("/var/scripts/coordinate.list", "r")
@@ -15,4 +17,5 @@ while line:
     user_count= user_count + 1
     line = coordinates.readline()
 coordinates.close()
+os.remove('/var/www/html/map.html')
 m.save('/var/www/html/map.html')
