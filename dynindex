@@ -29,7 +29,7 @@ page = """
         <a href="/nextcloud">Nextcloud</a>
         <a href="https://flexonmyex.de:4200">Shell</a>
         <a href="/access_log.html">Access Log</a>
-
+        <a href="/Corona">Corona</a>
 
 </div>
 
