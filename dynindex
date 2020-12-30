@@ -27,10 +27,8 @@ page = """
 <div class="navbar" width="5000px" background-color=green>
         <a href="/">Home</a>
         <a href="/nextcloud">Nextcloud</a>
-        <a href="https://flexonmyex.de:4200">Shell</a>
-        <a href="/access_log.html">Access Log</a>
-        <a href="/Corona">Corona</a>
-
+        <a href="/access_log">Access Log</a>
+        <a href="/messageboard">Messageboard (coming soon)</a>
 </div>
 
 
